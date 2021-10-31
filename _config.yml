@@ -290,7 +290,7 @@ defaults:
       related: true
       show_date: true
   # images
-  - scope:
-      path: "/assets/image/"
-    values:
-      image: true
+#   - scope:
+#       path: "/assets/image/"
+#     values:
+#       image: true
