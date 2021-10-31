@@ -16,3 +16,21 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   
+
+  docs:
+    - title: "Study Note"
+      children:
+        - title: "Python"
+          url: /_pages/
+        - title: "Statistics"
+          url: /_pages/
+        - title: "LaTeX"
+          url: /_pages/
+        - title: "My Note"
+          url: /pages/
+    - title: "Settings"
+      children:
+        - title: "GitHub"
+          url: /_pages/
+        - title: "Markdown"
+          url: /_pages/
