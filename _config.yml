@@ -291,6 +291,6 @@ defaults:
       show_date: true
   # images
   - scope:
-      path: "assets/image"
+      path: "/assets/image/"
     values:
       image: true
