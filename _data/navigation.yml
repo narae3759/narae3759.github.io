@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Home"
+    url: /
   - title: "Category"
     url: /categories/
   - title: "Posts"
@@ -7,20 +9,30 @@ main:
   - title: "Search"
     url: /search/
 
-sidebar:
+mysidebar:
   - title: "Statistics"
+    url: /
   - title: "Study Note"
-    childeren: 
+    children: 
       - title: "Python Note"
-        url: /categories/
+        url: /python/Note1
       - title: "Python Exercise"
         url: /categories/
-    url: /categories/
   - title: "GitHub Blog"
-    url: /categories/
+    url: /blog/Blog1
   - title: "Markdown/LaTeX"
     children:
       - title: "Markdown"
         url: /categories/
       - title: "LaTeX"
         url: /categories/ 
+
+test:
+  - title: "목차1"
+    url: /categories/
+  - title: "목차2"
+    children: 
+      - title: "소목차1"
+        url: /categories/
+      - title: "소목차2"
+        url: /categories/

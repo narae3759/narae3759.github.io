@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "KIM NARAE"
   avatar           : "/assets/images/idea.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "꾸준히 기록하는 블로그"
+  bio              : "배울때마다 기록해두기"
   location         : 
   email            :
   links:
@@ -274,7 +274,6 @@ compress_html:
   ignore:
     envs: development
 
-
 # Defaults
 defaults:
   # _posts
@@ -289,6 +288,15 @@ defaults:
       share: true
       related: true
       show_date: true
-      sidebar: 
-        nav: sidebar
- 
+      sidebar:
+        title: "Contents"
+        nav: "mysidebar"
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      author_profile: true
+      sidebar:
+        title: "Contents"
+        nav: "mysidebar"
