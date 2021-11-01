@@ -289,8 +289,6 @@ defaults:
       share: true
       related: true
       show_date: true
-  # images
-  # - scope:
-  #     path: "/assets/image/"
-  #   values:
-  #     image: true
+      sidebar: 
+        nav: sidebar
+ 

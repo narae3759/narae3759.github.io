@@ -7,12 +7,20 @@ main:
   - title: "Search"
     url: /search/
 
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
-  
+sidebar:
+  - title: "Statistics"
+  - title: "Study Note"
+    childeren: 
+      - title: "Python Note"
+        url: /categories/
+      - title: "Python Exercise"
+        url: /categories/
+    url: /categories/
+  - title: "GitHub Blog"
+    url: /categories/
+  - title: "Markdown/LaTeX"
+    children:
+      - title: "Markdown"
+        url: /categories/
+      - title: "LaTeX"
+        url: /categories/ 
