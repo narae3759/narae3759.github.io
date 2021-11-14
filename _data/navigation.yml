@@ -11,21 +11,17 @@ main:
 
 mysidebar:
   - title: "Statistics"
-    url: /
+    url: /categories/
   - title: "Study Note"
     children: 
       - title: "Python Note"
-        url: /python/Note1
+        url: /PythonNote/
       - title: "Python Exercise"
-        url: /categories/
+        url: /Python/
   - title: "GitHub Blog"
-    url: /blog/Blog1
-  - title: "Markdown/LaTeX"
-    children:
-      - title: "Markdown"
-        url: /categories/
-      - title: "LaTeX"
-        url: /categories/ 
+    url: /Blog/
+  - title: "LaTeX"
+    url: /LaTeX/
 
 test:
   - title: "목차1"

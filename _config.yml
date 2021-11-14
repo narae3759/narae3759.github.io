@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 locale                   : "ko-KR"
 title                    : "NARAE Blog"
 title_separator          : "|"
-subtitle                 : "하루에 하나씩" # site tagline that appears below site title in masthead
+subtitle                 : "꾸준히 기록하는 블로그" # site tagline that appears below site title in masthead
 name                     : "Kim Na Rae"
-description              : "꾸준히 기록하는 블로그"
+description              : "안녕하세요. 공부하는 블로그입니다."
 url                      : "https://narae3759.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
