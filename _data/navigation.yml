@@ -14,9 +14,7 @@ mysidebar:
     url: /categories/
   - title: "Study Note"
     children: 
-      - title: "Python Note"
-        url: /PythonNote/
-      - title: "Python Exercise"
+      - title: "Python"
         url: /Python/
       - title: "SQL"
         url: /SQL/
