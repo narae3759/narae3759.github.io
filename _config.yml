@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Kim NaRae"
-  avatar           : "/assets/images/rocks.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/핑구.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "배울때마다 기록해두기"
   location         : 
   email            :
