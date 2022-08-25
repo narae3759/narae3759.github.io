@@ -18,6 +18,8 @@ mysidebar:
         url: /PythonNote/
       - title: "Python Exercise"
         url: /Python/
+      - title: "SQL"
+        url: /SQL/
   - title: "GitHub Blog"
     url: /Blog/
   - title: "LaTeX"
