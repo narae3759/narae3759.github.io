@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Python Exercise"
+title: "Python"
 permalink: /Python/
 author_profiles: true
 ---
