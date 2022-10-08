@@ -274,6 +274,13 @@ compress_html:
   ignore:
     envs: development
 
+# Math equation
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
 # Defaults
 defaults:
   # _posts
