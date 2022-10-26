@@ -11,7 +11,9 @@ main:
 
 mysidebar:
   - title: "Statistics"
-    url: /categories/
+    children:
+      - title: "ML/DL"
+        url: /MLDL/
   - title: "Study Note"
     children: 
       - title: "HTML/CSS"
