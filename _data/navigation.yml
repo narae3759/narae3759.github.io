@@ -14,12 +14,14 @@ mysidebar:
     children:
       - title: "ML/DL"
         url: /MLDL/
-  - title: "Study Note"
+  - title: "Coding"
     children: 
       - title: "HTML/CSS"
         url: /HTML/
       - title: "Python"
         url: /Python/
+      - title: "ML/DL"
+        url: /MLDLcoding/
       - title: "SQL"
         url: /SQL/
   - title: "GitHub Blog"
