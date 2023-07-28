@@ -1,11 +1,12 @@
 ---
 layout: archive
-title: "ML/DL Coding"
-permalink: /MLDLcoding/
+title: "Paper reviews"
+permalink: /PAPER/
 author_profiles: true
+entries_layout: grid
 ---
 
-{% assign posts = site.categories.MLDLcoding %}
+{% assign posts = site.categories.PAPER %}
 {% for post in posts %} 
   {% include archive-single.html type=page.entries_layout %} 
 {% endfor %}

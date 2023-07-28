@@ -1,11 +1,12 @@
 ---
 layout: archive
-title: "ML/DL"
-permalink: /MLDL/
+title: "Data Analysis"
+permalink: /DA/
 author_profiles: true
+entries_layout: grid
 ---
 
-{% assign posts = site.categories.MLDL %}
+{% assign posts = site.categories.DA %}
 {% for post in posts %} 
   {% include archive-single.html type=page.entries_layout %} 
 {% endfor %}

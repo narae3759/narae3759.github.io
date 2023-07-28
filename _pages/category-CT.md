@@ -1,11 +1,12 @@
 ---
 layout: archive
-title: "HTML/CSS"
-permalink: /HTML/
+title: "CodingTest"
+permalink: /codingtest/
 author_profiles: true
+entries_layout: grid
 ---
 
-{% assign posts = site.categories.HTML %}
+{% assign posts = site.categories.codingtest %}
 {% for post in posts %} 
   {% include archive-single.html type=page.entries_layout %} 
 {% endfor %}

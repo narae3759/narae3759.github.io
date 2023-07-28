@@ -1,11 +1,12 @@
 ---
 layout: archive
-title: "GitHub Blog"
-permalink: /Blog/
+title: "Deep Learning"
+permalink: /DL/
 author_profiles: true
+entries_layout: grid
 ---
 
-{% assign posts = site.categories.Blog %}
+{% assign posts = site.categories.DL %}
 {% for post in posts %} 
   {% include archive-single.html type=page.entries_layout %} 
 {% endfor %}

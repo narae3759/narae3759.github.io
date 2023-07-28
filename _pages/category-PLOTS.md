@@ -1,11 +1,12 @@
 ---
 layout: archive
-title: "LaTeX"
-permalink: /LaTeX/
+title: "Plots"
+permalink: /plots/
 author_profiles: true
+entries_layout: grid
 ---
 
-{% assign posts = site.categories.LaTeX %}
+{% assign posts = site.categories.plots %}
 {% for post in posts %} 
   {% include archive-single.html type=page.entries_layout %} 
 {% endfor %}

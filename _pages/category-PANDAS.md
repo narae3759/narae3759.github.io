@@ -1,11 +1,12 @@
 ---
 layout: archive
-title: "Python"
-permalink: /Python/
+title: "Pandas"
+permalink: /pandas/
 author_profiles: true
+entries_layout: grid
 ---
 
-{% assign posts = site.categories.Python %}
+{% assign posts = site.categories.pandas %}
 {% for post in posts %} 
   {% include archive-single.html type=page.entries_layout %} 
 {% endfor %}
