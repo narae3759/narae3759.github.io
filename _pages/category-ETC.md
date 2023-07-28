@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Deep Learning"
-permalink: /ETC/
+permalink: /etc/
 author_profiles: true
 entries_layout: grid
 ---

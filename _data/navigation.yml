@@ -38,6 +38,8 @@ newsidebar:
         url: /ML/
       - title: "Deep Learning"
         url: /DL/
+      - title: "Papers"
+        url: /paper/
   - title: "Tips"
     children: 
       - title: "Pandas"
@@ -47,7 +49,7 @@ newsidebar:
       - title: "Coding Test"
         url: /codingtest/
   - title: "ETC"
-    url: /ETC/
+    url: /etc/
 
 test:
   - title: "목차1"

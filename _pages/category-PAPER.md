@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Paper reviews"
-permalink: /PAPER/
+permalink: /paper/
 author_profiles: true
 entries_layout: grid
 ---
