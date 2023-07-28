@@ -4,7 +4,7 @@ header:
     teaser: "/assets/images/pythonteaser.PNG"
 title: "[Algorithm] 스택(Stack)과 큐(Queue)"
 excerpt: "목표. 스택과 큐의 정의를 이해하고 관련 문제를 풀 수 있다."
-categories: Python
+categories: codingtest
 tags: [CodingTest, Stack, Queue, Algorithm, Programmers, Baekjoon]
 ---
 
@@ -232,5 +232,6 @@ if __name__ == "__main__":
 
 * [[노마드 코더]개발자라면 무조건 알아야하는 자료구조! 5분컷](https://youtu.be/Nk_dGScimz8)
 * [[Wikidocs]좌충우돌, 파이썬으로 자료구조 구현하기](https://wikidocs.net/192069)
+* [[Python Documentation] collections - deque](https://docs.python.org/ko/3/library/collections.html#deque-objects)
 
 </div>

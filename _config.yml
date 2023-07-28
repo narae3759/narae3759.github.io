@@ -288,17 +288,17 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      # layout: single
       author_profile: true
-      read_time: true
+      # read_time: true
       comments: true
       share: true
       related: true
       show_date: true
+      classes: wide
       toc: true
       toc_label: "Table of Contents"
-      toc_sticky: false
-      classes: wide
+      # toc_sticky: false
       sidebar:
         title: "Contents"
         nav: "newsidebar"

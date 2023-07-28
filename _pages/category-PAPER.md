@@ -6,7 +6,7 @@ author_profiles: true
 entries_layout: grid
 ---
 
-{% assign posts = site.categories.PAPER %}
+{% assign posts = site.categories.paper %}
 {% for post in posts %} 
   {% include archive-single.html type=page.entries_layout %} 
 {% endfor %}
