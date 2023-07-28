@@ -6,8 +6,11 @@ main:
     url: /categories/
   - title: "Posts"
     url: /year-archieve/
+  - title: "Tags"
+    url: /tags/
   - title: "Search"
     url: /search/
+
 
 # mysidebar:
 #   - title: "Statistics"
@@ -44,6 +47,8 @@ newsidebar:
     children: 
       - title: "Pandas"
         url: /pandas/
+      - title: "Crawling"
+        url: /web/
       - title: "Plots"
         url: /plots/
       - title: "Coding Test"

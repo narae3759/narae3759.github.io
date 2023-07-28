@@ -297,7 +297,7 @@ defaults:
       show_date: true
       toc: true
       toc_label: "Table of Contents"
-      toc_sticky: true
+      toc_sticky: false
       classes: wide
       sidebar:
         title: "Contents"
