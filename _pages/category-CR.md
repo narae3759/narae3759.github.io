@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Web Crawling"
-permalink: /crawling/
+permalink: /web/
 author_profiles: true
 entries_layout: grid
 ---

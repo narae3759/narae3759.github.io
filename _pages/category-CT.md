@@ -7,6 +7,13 @@ entries_layout: grid
 ---
 
 {% assign posts = site.categories.codingtest %}
+
+※ Coding Test 주의사항
+* 시간 복잡도, 메모리 등 조건들을 가장 먼저 파악하자.(제한시간이 짧다면 문제의 유형과 관련한 함수를 먼저 떠올려라.)
+* `sys.stdin.readline`을 사용할 때에는 공백을 주의하라. (`strip()` 사용하기)
+* 출력 형식(list인지 string인지)을 잘 지키자.
+
+
 {% for post in posts %} 
   {% include archive-single.html type=page.entries_layout %} 
 {% endfor %}
