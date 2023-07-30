@@ -227,6 +227,16 @@ if __name__ == "__main__":
 ## clear                > []
 ```
 
+# 4. 실전 문제 풀어보기(난이도 순)
+시간 복잡도를 고려하여 `deque()`를 이용해야만 풀 수 있는 문제들을 난이도별로 나열하였다. 각 문제의 옆을 드래그하면 Hint를 볼 수 있다.
+
+## 스택(stack)
+* [Bronze II, 백준 17608. 막대기](https://www.acmicpc.net/problem/17608) Hint. <font color="white">new보다 큰 친구들만 <b>남길 때까지</b> pop을 해야 한다.</font>
+* [Silver IV, 백준 3986. 좋은 단어](https://www.acmicpc.net/problem/17608) Hint. <font color="white">괄호 쌍 찾기 문제와 같다.</font>
+
+## 큐(queue)
+* [Silver V, 백준 2161. 카드1](https://www.acmicpc.net/problem/2161) Hint. <font color="white">rotate 함수를 이용하면 빠르다.</font>
+
 <div class="notice" markdown="1" style="font-size:12pt;">
 <h1 style='margin-top:0em'>Reference</h1>
 
