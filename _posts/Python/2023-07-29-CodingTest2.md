@@ -11,7 +11,7 @@ tags: [CodingTest, Hash Tables, Algorithm, Programmers, Baekjoon]
 # 1. 해시 테이블
 
 <p style="text-align:center;">
-    <img src="/assets/images/codingtest/hash1.png" width="70%">
+    <img src="/assets/images/codingtest/hash1.png" width="50%">
 </p>
 
 ## 1) 개념 정리
