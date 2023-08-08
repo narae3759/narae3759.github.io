@@ -43,6 +43,8 @@ newsidebar:
         url: /DL/
       - title: "Papers"
         url: /paper/
+  - title: "Backend"
+    url: /backend/
   - title: "Tips"
     children: 
       - title: "Pandas"
