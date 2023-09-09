@@ -2,77 +2,109 @@
 layout: single
 header:
     teaser: "/assets/images/pythonteaser.PNG"
-title: "[알고리즘] 깊이 우선 탐색(Deep First Search, DFS)"
-excerpt: "목표. DFS를 이용하여 그래프를 그리고 문제를 해결할 수 있다."
+title: "[자료구조] 그래프 구현하기"
+excerpt: "목표. 정보가 주어졌을 때 그래프로 구현할 수 있다."
 categories: codingtest
-tags: [CodingTest, DFS, 깊이 우선 탐색, Recursive function, Stack, Programmers, Baekjoon]
+tags: [CodingTest, graph, python, Programmers, Baekjoon]
 ---
 
-# 1. 깊이 우선 탐색
+# 1. 그래프(Graph)
 
-## 1) 개념 정리
-* 첫 시작을 `start`라고 했을 때, 더이상 탐색할 수 없을 때까지 계속 탐색하는 과정을 말한다. 
-* 모든 경우의 수를 찾고, 그 경우의 수 중 조건을 만족하는 것을 출력한다. 
-* Stack으로 푸는 방법과 Recursion Function으로 푸는 방법 2가지가 있다고 한다. 
-
-### Stack(정리 중)
-
-### 재귀함수(Recursive Function)
-    
-```python
-visited = [0 for _ in range(N+1)]       # 방문했는지 안했는지의 여부
-num = 1                                 # 방문 순서를 표시하기 위함
-def dfs(graph, visited, start):
-    global num
-    visited[start] = num
-
-    for node in graph[start]:
-        if visited[node] == 0:          # 방문한 적이 없는 노드만 방문 예줭
-            num += 1
-            dfs(graph, visited, node)
-```
-
-* ***Note!*** 재귀함수를 사용할 때에는 `RecursionError`를 조심해야 한다. 만약 이 에러를 만났다면 다음 코드로 해결할 수 있다. 
-    ```python
-    sys.setrecursionlimit(int)
-    ```
-
-
-## 2) 그래프 개념 정리
-
+## 1) 용어 정리
 <p style="text-align:center;">
-    <img src="/assets/images/codingtest/dfs1.png" width="50%">
+    <img src="/assets/images/codingtest/graph1.PNG" width="50%">
 </p>
 
-* 방향이 있는지의 유무, 가중치의 유무에 따라 그래프를 나눌 수 있다.
-* 용어
-    * 정점(vertex or node) : 동그라미
-    * 간선(edge or link) : 동그라미 사이를 잇는 선
-    * 인접 정점(Adjacent vertex) : 정점과 이어지는 정점
-* 그래프의 연결관계를 리스트로 나타낸 것을 **인접 리스트**라고 하는데 이를 이용하여 문제를 해결한다. <br>
-리스트를 만들 때 편의 상 노드번호와 맞추기 위해 0번째 요소에 빈 리스트를 포함하여 만든다. 
-* EX) `N`개의 정점이 있을 때, 무방향 그래프를 그려보자.
-    ```python
-    # 무방향
-    graph = [[] for _ in range(N+1)]
+* 정점(Vertex) : 1, 2, 3, 4, 5와 같이 노드(node)를 말한다.
+* 간선(Edges) : 정점을 잇는 선을 말한다.
+* 인접 정점(Adjacent Vertex) : 한 정점과 이어지는 정점들
 
-    for _ in range(M):
-        node1, node2 = map(int, input().split(' '))
-        graph[node1].append(node2)
-        graph[node2].append(node1)
-    ```
-    양방향이기 때문에 그래프에 node를 바꿔서 두번 삽입한 것을 볼 수 있다. 
+### 수학적 표현
+그래프를 $G$라고 하고, 정점과 간선들의 집합을 각각 $V, E$라고 할 때 다음과 같이 표현된다. 
 
+$$
+    G = (V,E)
+$$
 
-# 2. 실습 문제
+위의 그림을 예시로 설명하면 아래와 같은데 이때 간선 정보의 표현은 $(u,v)$라고 할 때 $u<v$를 기준으로 표현했다.
 
-* [알고리즘 수업 - 깊이 우선 탐색 1(무방향 그래프, 오름차순)](https://www.acmicpc.net/problem/24479)
-* [알고리즘 수업 - 깊이 우선 탐색 2(무방향 그래프, 내림차순)](https://www.acmicpc.net/problem/24480)
+$$
+    \begin{aligned}
+    V &= \{1,2,3,4,5\}\\
+    E &= \{(1,2),(1,3),(1,4),(2,4),(2,5),(3,4),(4,5)\}
+    \end{aligned}
+$$
+
+## 2) 그래프 구조
+그래프는 간선의 정보에 따라 3개로 분류할 수 있다. <br>
+간선에 방향이 없으면 무방향(Undirected), 있으면 방향(Directed), 가중치가 있으면 (Weighted) 그래프라고 한다.
+
+<p style="text-align:center;">
+    <img src="/assets/images/codingtest/graph2.PNG" width="70%">
+</p>
+
+## 3) 표현 방법(Using Python)
+파이썬으로 그래프를 표현할 수 있는 방법은 2가지가 있다. 무방향 그래프인 맨 위의 그래프를 예시로 하여 그려보았다. 
+
+### 인접 행렬(Adjacency Matrix)
+정점들의 모든 집합을 행렬로 나타낸 후 간선이 있는 경우를 1로 나타낸 행렬을 말한다. 행렬의 경우 쓰이지 않는 공간이 많아 비효율적인 경우가 많다. 그래서 인접 리스트가 많이 활용된다.
+
+```python
+# 노드를 맞추기 위해 0번째 행, 0번째 열을 빈공간으로 해서 표현했다.
+def graph_mat(n_vertex, edges):
+    graph = [[0 for _ in range(n_vertex+1)] for _ in range(n_vertex+1)]
+
+    for v1, v2 in edges:
+        graph[v1][v2] = 1
+        graph[v2][v1] = 1
+    
+    return graph
+
+# Output
+# [[0, 0, 0, 0, 0, 0],
+#  [0, 0, 1, 1, 1, 0],
+#  [0, 1, 0, 0, 1, 1],
+#  [0, 1, 0, 0, 1, 0],
+#  [0, 1, 1, 1, 0, 1],
+#  [0, 0, 1, 0, 1, 0]]
+```
+
+### 인접 리스트(Adjacency List)
+정점들의 인접 정점을 리스트로 표현한 후, 이 정점들을 리스트로 표현한 것을 말한다. <br>
+보통 정점은 숫자 1부터 표현되는데 편의를 위해 인접 리스트를 만들 때 0번째 인덱스를 빈 공간으로 나타낸 후 표현한다. <br>
+만약 빈 공간으로 표현되는 게 싫다면 딕셔너리로 구현하는 방법도 있다. 
+
+```python
+# 리스트
+def graph_list(n_vertex, edges):
+    graph = [[] for _ in range(n_vertex+1)]
+
+    for v1, v2 in edges:
+        graph[v1].append(v2)
+        graph[v2].append(v1)
+    
+    return graph
+
+# Output
+# [[], [2, 3, 4], [1, 4, 5], [1, 4], [1, 2, 3, 5], [2, 4]]
+
+# 딕셔너리
+def graph_dict(n_vertex, edges):
+    graph = {i:[] for i in range(1,n_vertex+1)}
+
+    for v1, v2 in edges:
+        graph[v1].append(v2)
+        graph[v2].append(v1)
+    
+    return graph
+
+# Output
+# {1: [2, 3, 4], 2: [1, 4, 5], 3: [1, 4], 4: [1, 2, 3, 5], 5: [2, 4]}
+```
 
 <div class="notice" markdown="1" style="font-size:12pt;">
 <h1 style='margin-top:0em'>Reference</h1>
 
-* [[노마드 코더]개발자라면 꼭 알아야할 Hash Table의 모든 것!](https://youtu.be/HraOg7W3VAM)
 * [[Wikidocs]좌충우돌, 파이썬으로 자료구조 구현하기](https://wikidocs.net/193049)
 
 </div>
