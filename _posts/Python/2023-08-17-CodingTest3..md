@@ -1,7 +1,7 @@
 ---
 layout: single
 header:
-    teaser: "/assets/images/pythonteaser.PNG"
+    teaser: "/assets/images/teaser/python_teaser.PNG"
 title: "[자료구조] 그래프 구현하기"
 excerpt: "목표. 정보가 주어졌을 때 그래프로 구현할 수 있다."
 categories: codingtest

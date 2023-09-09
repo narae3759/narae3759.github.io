@@ -1,7 +1,7 @@
 ---
 layout: single
 header:
-    teaser: "/assets/images/pythonteaser.PNG"
+    teaser: "/assets/images/teaser/python_teaser.PNG"
 title: "[자료구조] 스택(Stack)과 큐(Queue)"
 excerpt: "목표. 스택과 큐의 정의를 이해하고 관련 문제를 풀 수 있다."
 categories: codingtest
