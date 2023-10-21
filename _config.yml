@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 locale                   : "ko-KR"
 title                    : "NR-log"
 title_separator          : "|"
-subtitle                 : "뭐 하나라도 하고 자자" # site tagline that appears below site title in masthead
+subtitle                 : "뭐 하나라도 하자" # site tagline that appears below site title in masthead
 name                     : "Kim Na Rae"
 description              : "배우고 기록하는 블로그"
 url                      : "https://narae3759.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"

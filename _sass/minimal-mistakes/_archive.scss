@@ -131,6 +131,89 @@
   }
 }
 
+// .list__item {
+//   position: relative;
+//   display: inline-block;
+//   justify-content: center;
+//   width: 100%;
+//   height: auto;
+
+//   @media screen and (min-width: 600px) {
+//   .archive__item-teaser_list {
+//     position: relative;
+//     border-radius: $border-radius;
+//     overflow: hidden;
+//     margin-right: 0.5em;
+//     display: inline;
+//     justify-content: center;
+//     float : left;
+//     margin-bottom: 5px;
+
+//     background-color: mix(rgb(122, 122, 122), $background-color, 10%);
+//     backdrop-filter: blur(10px);
+//     width: 15em;
+//     max-height: 130px;
+//     text-align: center;
+//     vertical-align: middle;
+
+//     img {
+//       margin: auto;
+//       position: relative; //absolute;
+//       object-fit: contain;
+//       overflow: hidden;
+//       justify-content: center;
+//       transition: all 0.3s linear; //hover 시간 조정
+//     }
+
+//     @include breakpoint($small) {
+//       min-height: 130px;
+//       background-size: contain; //비율 강제 고정
+//     }
+
+//     @include breakpoint($medium) {
+//       background-size: contain; //비율 강제 고정
+//     }
+//   }
+//   }
+//   .archive__item-postbox {
+//     display: inline;
+//     padding-bottom: 0.25em;
+//     //float : left;
+//     clear: both;
+//     width: auto;
+//     vertical-align: middle;
+
+//     h2 {
+//         margin: 0 0 4px;
+//         padding-top: 5px;
+//       }
+//   }
+// }
+// .archive__item-caption {
+// position: relative;  //absolute;
+// bottom: 0;
+// right: 0;
+// margin: 0 auto;
+// padding: 2px 5px;
+// color: #fff;
+// font-family: $caption-font-family;
+// font-size: $type-size-8;
+// background: #000;
+// text-align: right;
+// z-index: 5;
+// opacity: 0.5;
+// border-radius: $border-radius 0 0 0;
+
+// @include breakpoint($large) {
+//   padding: 5px 10px;
+// }
+
+// a {
+//   color: #fff;
+//   text-decoration: none;
+// }
+// }
+
 /*
    Grid view
    ========================================================================== */
@@ -154,7 +237,7 @@
 
   @include breakpoint($small) {
     float: left;
-    width: span(5 of 10);
+    width: span(3 of 12);
 
     &:nth-child(2n + 1) {
       clear: both;
@@ -167,33 +250,38 @@
     }
   }
 
+  //grid 4배열에서 3배열
   @include breakpoint($medium) {
     margin-left: 0; /* override margin*/
     margin-right: 0; /* override margin*/
-    width: span(3 of 12);
+    width: span(7 of 24); //width: span(3 of 12);
 
-    &:nth-child(2n + 1) {
+    min-height: 12em; //추가
+
+    &:nth-child(2n + 1) {  //&:nth-child(2n + 1) {
       clear: none;
     }
 
-    &:nth-child(4n + 1) {
+    &:nth-child(4n + 1) { //&:nth-child(4n + 1) {
       clear: both;
+      margin-left: gutter(3 of 12);
     }
 
-    &:nth-child(4n + 2) {
+    &:nth-child(4n + 2) { //&:nth-child(4n + 2) {
       clear: none;
-      margin-left: gutter(1 of 12);
+      margin-left: gutter(3 of 12);
     }
 
-    &:nth-child(4n + 3) {
+    &:nth-child(4n + 3) { //&:nth-child(4n + 3) {
       clear: none;
-      margin-left: gutter(1 of 12);
+      margin-left: gutter(3 of 12);
+    }
+  
+    &:nth-child(4n + 4) { //&:nth-child(4n + 3) {
+      clear: none;
+      margin-left: gutter(3 of 12);
     }
 
-    &:nth-child(4n + 4) {
-      clear: none;
-      margin-left: gutter(1 of 12);
-    }
   }
 
   .page__meta {
