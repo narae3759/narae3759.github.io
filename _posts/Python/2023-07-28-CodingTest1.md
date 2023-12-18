@@ -199,17 +199,17 @@ if __name__ == "__main__":
 
 <table>
 <tr><th>code</th><th>description</th></tr>
-<tr><td>append(data)</td><td>오른쪽에 원소 data(하나)를 추가한다.</td></tr>
-<tr><td>appendleft(data)</td><td>왼쪽에 원소 data(하나)를 추가한다.</td></tr>
-<tr><td>extend(data)</td><td>오른쪽에 원소 data(여러 개|문자열, 리스트 등)를 추가한다.</td></tr>
-<tr><td>extendleft(data)</td><td>왼쪽에 원소 data(여러 개|문자열, 리스트 등)를 추가한다.</td></tr>
-<tr><td>pop()</td><td>가장 오른쪽 원소를 제거한다. 제거값을 반환함.</td></tr>
-<tr><td>popleft()</td><td>가장 왼쪽 원소를 제거한다. 제거값을 반환함.</td></tr>
-<tr><td>index(data)</td><td>data의 위치를 반환한다.</td></tr>
-<tr><td>insert(i,data)</td><td>i 위치에 data를 삽입한다.</td></tr>
-<tr><td>clear()</td><td>모든 data를 제거하고, 길이를 0으로 만든다.</td></tr>
-<tr><td>reverse()</td><td>data의 순서를 뒤집는다.</td></tr>
-<tr><td>rotate(n)</td><td>뒤에서 n번째부터 순환한다.</td></tr>
+<tr><td><code>append(data)</code></td><td>오른쪽에 원소 data(하나)를 추가한다.</td></tr>
+<tr><td><code>appendleft(data)</code></td><td>왼쪽에 원소 data(하나)를 추가한다.</td></tr>
+<tr><td><code>extend(data)</code></td><td>오른쪽에 원소 data(여러 개|문자열, 리스트 등)를 추가한다.</td></tr>
+<tr><td><code>extendleft(data)</code></td><td>왼쪽에 원소 data(여러 개|문자열, 리스트 등)를 추가한다.</td></tr>
+<tr><td><code>pop()</code></td><td>가장 오른쪽 원소를 제거한다. 제거값을 반환함.</td></tr>
+<tr><td><code>popleft()</code></td><td>가장 왼쪽 원소를 제거한다. 제거값을 반환함.</td></tr>
+<tr><td><code>index(data)</code></td><td>data의 위치를 반환한다.</td></tr>
+<tr><td><code>insert(i,data)</code></td><td>i 위치에 data를 삽입한다.</td></tr>
+<tr><td><code>clear()</code></td><td>모든 data를 제거하고, 길이를 0으로 만든다.</td></tr>
+<tr><td><code>reverse()</code></td><td>data의 순서를 뒤집는다.</td></tr>
+<tr><td><code>rotate(n)</code></td><td>뒤에서 n번째부터 순환한다.</td></tr>
 </table>
 
 ## Examples
