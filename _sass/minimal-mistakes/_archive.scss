@@ -9,12 +9,12 @@
     @include breakpoint($large) {
       float: right;
       width: calc(100% - #{$right-sidebar-width-narrow});
-      padding-right: 0; // $right-sidebar-width-narrow;
+      padding-right: 0; //$right-sidebar-width-narrow;
     }
   
     @include breakpoint($x-large) {
       width: calc(100% - #{$right-sidebar-width});
-      padding-right: 0; // $right-sidebar-width;
+      padding-right: 0; //$right-sidebar-width;
     }
   }
   
@@ -94,7 +94,6 @@
       width: 100%;
     }
   }
-
   
   .archive__item-caption {
     position: absolute;
@@ -131,7 +130,6 @@
       font-size: 0.6em;
     }
   }
-
   
   /*
      Grid view

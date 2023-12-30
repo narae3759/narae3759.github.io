@@ -33,30 +33,28 @@ main:
 #     url: /LaTeX/
 
 newsidebar:
-  - title: "Data Analysis"
-    url: /DA/
-  - title: "AI"
+  - title: "PYTHON"
+    # url: /python/
     children: 
-      - title: "Machine Learning"
-        url: /ML/
-      - title: "Deep Learning"
-        url: /DL/
-      - title: "Papers"
-        url: /paper/
-  - title: "Backend"
-    url: /backend/
-  - title: "Tips"
-    children: 
-      - title: "Pandas"
-        url: /pandas/
-      - title: "Crawling"
-        url: /web/
-      - title: "Plots"
-        url: /plots/
+      - title: "Note"
+        url: /pythonnote/
+      - title: "AI"
+        url: /ai/
+      - title: "Server"
+        url: /server/
       - title: "Coding Test"
         url: /codingtest/
+  - title: "GITHub"
+    url: /github/
   - title: "ETC"
-    url: /etc/
+    # url: /etc/
+    children: 
+      - title: "HTML"
+        url: /html/
+      - title: "SQL"
+        url: /sql/
+      - title: "LaTeX"
+        url: /latex/
 
 test:
   - title: "목차1"
