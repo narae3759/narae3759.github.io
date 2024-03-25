@@ -52,7 +52,8 @@
 
 .pagination {
   @include clearfix();
-  float: left;
+  display: flex;
+  justify-content: center;
   margin-top: 1em;
   padding-top: 1em;
   width: 100%;
