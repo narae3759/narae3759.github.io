@@ -11,27 +11,6 @@ main:
   - title: "Search"
     url: /search/
 
-
-# mysidebar:
-#   - title: "Statistics"
-#     children:
-#       - title: "ML/DL"
-#         url: /MLDL/
-#   - title: "Coding"
-#     children: 
-#       - title: "HTML/CSS"
-#         url: /HTML/
-#       - title: "Python"
-#         url: /Python/
-#       - title: "ML/DL"
-#         url: /MLDLcoding/
-#       - title: "SQL"
-#         url: /SQL/
-#   - title: "GitHub Blog"
-#     url: /Blog/
-#   - title: "LaTeX"
-#     url: /LaTeX/
-
 newsidebar:
   - title: "PYTHON"
     # url: /python/
