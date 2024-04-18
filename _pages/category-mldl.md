@@ -1,12 +1,11 @@
 ---
 layout: archive
-title: "Python Basic"
-permalink: /pythonbasic/
+title: "ML/DL"
+permalink: /mldl/
 author_profiles: true
-entries_layout: list
 ---
 
-{% assign posts = site.categories.pythonbasic %}
+{% assign posts = site.categories.mldl %}
 {% for post in posts %} 
   {% include archive-single-custom.html type=page.entries_layout %} 
 {% endfor %}

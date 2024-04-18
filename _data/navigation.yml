@@ -25,9 +25,13 @@ newsidebar:
   - title: "NOTE"
     children:
       - title: "ML/DL"
-      - url: /mldl/
+        url: /mldl/
   - title: "GIT · GITHUB"
-    url: /github/
+    children: 
+      - title: "Git"
+        url: /git/
+      - title: "Github"
+        url: /github/
   - title: "ETC"
     children: 
       - title: "HTML"

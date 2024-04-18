@@ -1,11 +1,12 @@
 ---
 layout: archive
-title: "AI"
-permalink: /ai/
+title: "Git"
+permalink: /git/
 author_profiles: true
+entries_layout: list
 ---
 
-{% assign posts = site.categories.ai %}
+{% assign posts = site.categories.git %}
 {% for post in posts %} 
   {% include archive-single-custom.html type=page.entries_layout %} 
 {% endfor %}
