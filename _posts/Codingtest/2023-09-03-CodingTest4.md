@@ -1,7 +1,7 @@
 ---
 layout: single
 header:
-    teaser: "/assets/images/teaser/python_teaser.PNG"
+    teaser: "/assets/images/teaser/codingtest_teaser.JPG"
 title: "[알고리즘] 깊이 우선 탐색(Deep First Search, DFS)"
 excerpt: "목표. DFS를 이용하여 그래프를 그리고 문제를 해결할 수 있다."
 categories: codingtest

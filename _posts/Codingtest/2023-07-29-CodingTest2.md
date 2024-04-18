@@ -1,7 +1,7 @@
 ---
 layout: single
 header:
-    teaser: "/assets/images/teaser/python_teaser.PNG"
+    teaser: "/assets/images/teaser/codingtest_teaser.JPG"
 title: "[알고리즘] 해시 테이블(Hash Tables)"
 excerpt: "목표. 해시 테이블을 이용하여 효율성 문제를 해결할 수 있다."
 categories: codingtest
